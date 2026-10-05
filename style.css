@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -244,13 +245,27 @@ button .fas {
 
 /* Messages */
 #greeting {
-  font-weight: 500;
+  background-color: #7eccae;
+  font-weight: 600;
   font-size: 18px;
+  text-align: center;
   padding: 16px 20px;
+  border-left: 5px solid #00c7fd;
   border-radius: 8px;
-  color: #333;
-  margin-bottom: 15px;
+  color: #0068b5;
+  margin-bottom: 20px;
+  display: block;
+}
+#celebration {
   display: none;
+  background-color: #e8f4fc;
+  color: #0068b5;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 
 .success-message {
@@ -348,6 +363,41 @@ select {
   color: #475569;
 }
 
+/* Attendee List */
+.attendee-list-section {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.attendee-list-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#attendeeList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attendee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+}
+
+.attendee-name {
+  font-weight: 600;
+}
+
+.attendee-team {
+  color: #555;
+  font-size: 14px;
+}
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
